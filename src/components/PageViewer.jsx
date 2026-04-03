@@ -1,6 +1,7 @@
 import { useRef, useEffect } from "react";
 import styled from "styled-components";
 import OpenSeadragon from "openseadragon";
+import { config } from "../config";
 
 const isPointInPolygon = (px, py, points) => {
   let inside = false;
@@ -36,7 +37,7 @@ const PageViewer = ({ page = "00", hotspots = [], onHotspotClick }) => {
       element: viewerRef.current,
       tileSources: `/images/dzi/room-${page}.dzi`,
       constrainDuringPan: true,
-      maxZoomLevel: 4,
+      maxZoomLevel: config.MAX_ZOOM_LEVEL,
       visibilityRatio: 1,
       keyboardShortcuts: false,
       showNavigationControl: false,

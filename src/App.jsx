@@ -12,6 +12,15 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  &::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-color: #e8d390;
+    mix-blend-mode: color-burn;
+    pointer-events: none;
+    z-index: 100;
+  }
 `;
 
 const App = () => {
