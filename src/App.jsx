@@ -1,6 +1,9 @@
 import { useState } from "react";
 import styled from "styled-components";
 import PageViewer from "./components/PageViewer";
+import HotspotEditor from "./components/HotspotEditor";
+import { hotspots as hotspotData } from "./data/hotspots";
+import { config } from "./config";
 
 const Container = styled.div`
   width: 100%;
@@ -12,10 +15,21 @@ const Container = styled.div`
 `;
 
 const App = () => {
-  const [currentPage, setCurrentPage] = useState(0);
+  const [currentPage, setCurrentPage] = useState("00");
+
+  if (config.EDITOR_MODE) return <HotspotEditor />;
+
+  const pageHotspots =
+    hotspotData.find((p) => p.page === currentPage)?.hotspots ?? [];
+
   return (
     <Container>
-      <PageViewer page={currentPage} />
+      <PageViewer
+        key={currentPage}
+        page={currentPage}
+        hotspots={pageHotspots}
+        onHotspotClick={(target) => setCurrentPage(target)}
+      />
     </Container>
   );
 };
