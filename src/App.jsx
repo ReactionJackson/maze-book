@@ -86,14 +86,17 @@ const fadeElement = (el, toOpacity, durationMs) => {
 const App = () => {
   const [currentPage, setCurrentPage] = useState("00");
   const [phase, setPhase] = useState("idle"); // 'idle' | 'closing' | 'transit' | 'revealing'
-  const [panelOpen, setPanelOpen] = useState(true);
+  const [panelOpen, setPanelOpen] = useState(false);
   const [transitReady, setTransitReady] = useState(false);
   const [travelExit, setTravelExit] = useState("");
   const [travelEnter, setTravelEnter] = useState("");
   const [tvMode, setTvMode] = useState(false);
+  const [path, setPath] = useState([]); // rooms visited; empty until room 01 entered
 
   const timerRef = useRef(null);
   const viewerWrapperRef = useRef(null);
+  // True when the room we're navigating INTO has been visited before on this run.
+  const isRevisitRef = useRef(false);
 
   const clearTimer = () => {
     if (timerRef.current) clearTimeout(timerRef.current);
@@ -110,6 +113,12 @@ const App = () => {
     return () => window.removeEventListener("keydown", onKeyDown);
   }, []);
 
+  // Panel starts closed; animate open after 1 s for a cinematic reveal on load.
+  useEffect(() => {
+    const id = setTimeout(() => setPanelOpen(true), 1000);
+    return () => clearTimeout(id);
+  }, []);
+
   if (config.EDITOR_MODE) return <HotspotEditor />;
 
   const pageHotspots =
@@ -118,19 +127,25 @@ const App = () => {
   // Kicks off the room fade and page swap — called either immediately (panel
   // already closed) or after the panel has finished sliding out.
   const beginTransit = (target) => {
+    const fromPage = currentPage; // capture before any async delay
     setPhase("transit");
     fadeElement(viewerWrapperRef.current, 0, config.TRANSITION_ROOM_MS);
     clearTimer();
-    timerRef.current = setTimeout(
-      () => setCurrentPage(target),
-      Math.round(config.TRANSITION_ROOM_MS * 0.5),
-    );
+    timerRef.current = setTimeout(() => {
+      setCurrentPage(target);
+      // Prologue → room 01 is free; every other move appends to the path.
+      setPath((prev) => fromPage === "00" ? [target] : [...prev, target]);
+    }, Math.round(config.TRANSITION_ROOM_MS * 0.5));
   };
 
   // Called when the user clicks a door hotspot.
   const handleHotspotClick = useCallback(
     (target) => {
       if (phase !== "idle") return;
+
+      // Record whether we've been here before so handleTransitClick can decide
+      // whether to reopen the panel.
+      isRevisitRef.current = path.includes(target);
 
       setTravelExit(getNarrative(currentPage)?.travel?.exit ?? "");
       setTravelEnter(getNarrative(target)?.travel?.enter ?? "");
@@ -150,7 +165,7 @@ const App = () => {
         beginTransit(target);
       }
     },
-    [phase, panelOpen, currentPage], // eslint-disable-line react-hooks/exhaustive-deps
+    [phase, panelOpen, currentPage, path], // eslint-disable-line react-hooks/exhaustive-deps
   );
 
   // Called by the new PageViewer's OSD when its tileset is open and rendered.
@@ -169,7 +184,8 @@ const App = () => {
     clearTimer();
     timerRef.current = setTimeout(() => {
       setPhase("idle");
-      setPanelOpen(true); // auto-open panel once overlay has gone
+      // Only open the panel automatically on a first visit to this room.
+      if (!isRevisitRef.current) setPanelOpen(true);
     }, config.TRANSITION_OVERLAY_MS + 100);
   }, [phase, transitReady]);
 
@@ -177,7 +193,7 @@ const App = () => {
 
   return (
     <Container>
-      <NarrativePanel page={currentPage} isOpen={panelOpen} tvMode={tvMode} />
+      <NarrativePanel page={currentPage} isOpen={panelOpen} tvMode={tvMode} path={path} />
 
       <ToggleButton
         $panelOpen={panelOpen}

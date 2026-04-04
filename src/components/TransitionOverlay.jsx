@@ -23,7 +23,7 @@ const TravelText = styled.div`
   pointer-events: none;
 
   p {
-    color: ${({ $tvMode }) => $tvMode ? "rgba(252, 247, 226, 0.7)" : "rgba(252, 247, 226, 0.85)"};
+    color: ${({ $tvMode }) => $tvMode ? "rgba(252, 247, 226, 0.7)" : "rgba(252, 247, 226, 0.9)"};
     font-size: 2.7vw;
     margin: 1vw 0;
 
