@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styled from "styled-components";
 import PageViewer from "./components/PageViewer";
+import NarrativeOverlay from "./components/NarrativeOverlay";
 import HotspotEditor from "./components/HotspotEditor";
 import { hotspots as hotspotData } from "./data/hotspots";
 import { config } from "./config";
@@ -16,7 +17,7 @@ const Container = styled.div`
     content: "";
     position: fixed;
     inset: 0;
-    background-color: #e8d390;
+    background-color: rgb(232, 211, 144);
     mix-blend-mode: color-burn;
     pointer-events: none;
     z-index: 100;
@@ -33,8 +34,9 @@ const App = () => {
 
   return (
     <Container>
+      <NarrativeOverlay key={`page-${currentPage}`} page={currentPage} />
       <PageViewer
-        key={currentPage}
+        key={`page-${currentPage}`}
         page={currentPage}
         hotspots={pageHotspots}
         onHotspotClick={(target) => setCurrentPage(target)}
