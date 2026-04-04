@@ -5,7 +5,7 @@ const Overlay = styled.div`
   position: fixed;
   inset: 0;
   z-index: 100;
-  background: ${({ $tvMode }) => $tvMode ? "rgba(0, 0, 0, 0.55)" : "rgba(0, 0, 0, 0.65)"};
+  background: ${({ $tvMode }) => $tvMode ? "rgba(0, 0, 0, 0.6)" : "rgba(0, 0, 0, 0.7)"};
   display: flex;
   align-items: center;
   justify-content: center;

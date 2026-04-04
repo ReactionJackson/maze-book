@@ -53,6 +53,13 @@ const Content = styled.div`
   hyphens: auto;
   overflow-wrap: break-word;
 
+  h1 {
+    color: ${({ $tvMode }) =>
+      $tvMode ? "#b4a855" : "rgba(252, 247, 226, 0.75)"};
+    font-size: max(2.5vw, 36px);
+    margin-bottom: 0.3em;
+  }
+
   p {
     color: ${({ $tvMode }) =>
       $tvMode ? "#b4a855" : "rgba(252, 247, 226, 0.75)"};
@@ -137,7 +144,7 @@ const StepLabel = styled.div`
 const roomImgStyle = (height, faded) => ({
   height,
   flexShrink: 0,
-  filter: "invert(1) sepia(0.8) contrast(1.4)",
+  filter: "invert(1) sepia(1) contrast(1.4)",
   opacity: faded ? 0.4 : 0.9,
   transform: `scale(${faded ? 0.8 : 1})`,
   display: "block",

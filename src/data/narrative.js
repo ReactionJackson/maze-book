@@ -2,7 +2,7 @@ export const narrative = [
   {
     page: "00",
     content: `
-      <p>The Maze.</p>
+      <h1>The Maze.</h1>
       <p>I met them at the gate though I usually wait inside. Preoccupied with their own thoughts, impatient, like so many children, they didn't see who I really was. They never noticed my crown, my pain, the fire in my eyes.</p>
       <p>Like all the others they think the Maze was made for them; actually, it is the other way around. They think I am some poet who will lead them through the symbols and spaces of this Underworld. They think I will teach them lessons. They should call me Cerberus... I am the lesson.</p>
       <p>The monstrous walls rise up and run away as far as the human eye can see, circling and dividing. Which half is the Maze?</p>
