@@ -27,7 +27,7 @@ export const narrative = [
       <p>"Nary a soul to be seen," said the first, peering into the gloom.</p>
     `,
     travel: {
-      enter: "...the entrance hall of the Maze.",
+      enter: "the entrance hall of the Maze.",
       exit: "I waited patiently for them to choose which way to go... into... ",
     },
   },
@@ -39,8 +39,7 @@ export const narrative = [
       <p>Keeping in mind what a relative term “right” is, I assured them they were, indeed, on the right path. As for the “correct” path or the “most appropriate” path... Well, that might be something else.</p>
     `,
     travel: {
-      enter:
-        "...a bright room whose walls were in some disrepair. The floorboards creaked and groaned; the plaster made a gritty sound.",
+      enter: "a bright room whose walls were in some disrepair. The floorboards creaked and groaned; the plaster made a gritty sound.",
       exit: "Full of confidence now they marched out to...",
     },
   },
@@ -51,7 +50,7 @@ export const narrative = [
       <p>Because no one wanted to stay here very long they missed the real sign while looking through the obvious. People in their situation, confronted with a challenge, tend to accept the terms of the challenge as a given, without examining it from all sides. How many sides does that problem have? They don't know.</p>
     `,
     travel: {
-      enter: "...an entirely different kind of place.",
+      enter: "an entirely different kind of place.",
       exit: "We passed down a long flight of stairs, through some sort of pantry, and on into... ",
     },
   },
@@ -64,7 +63,7 @@ export const narrative = [
       <p>“Shall we toss a coin?” I asked. “Or have you made up your minds?”</p>
     `,
     travel: {
-      enter: "...the great hall of many doors.",
+      enter: "the great hall of many doors.",
       exit: "They hadn't made up their minds, and they had no coins. By a process of elimination they decided to go to... ",
     },
   },
@@ -76,7 +75,7 @@ export const narrative = [
       <p>What were their chances of choosing wisely... one in four? Two in four perhaps, if I was generous about it... and why not be generous? There are one hundred ninety doors in this part of the House, counting the gate... enough for everyone.</p>
     `,
     travel: {
-      enter: "...the tree room.",
+      enter: "the tree room.",
       exit: "Making a choice, they entered a very long, dark corridor and at last came out into... ",
     },
   },
@@ -88,8 +87,7 @@ export const narrative = [
       <p>“You continue to judge everything by the way it looks!” I cried, exasperated by their timidity. I knew I shouldn't have said anything. If you think of all the deceptions practiced in my family, particularly on my father... </p>
     `,
     travel: {
-      enter:
-        "...a gloomy, cavelike place far underground. Even I was oppressed by the weight that hung over our heads. A very small hole, high above, admitted a feeble light.",
+      enter: "a gloomy, cavelike place far underground. Even I was oppressed by the weight that hung over our heads. A very small hole, high above, admitted a feeble light.",
       exit: "We went down the only way open to us and came to... ",
     },
   },
@@ -101,8 +99,7 @@ export const narrative = [
       <p>Music was being played somewhere nearby. We stopped to listen for a moment.</p>
     `,
     travel: {
-      enter:
-        "...a pleasant room with three doors and a lamp. Looking at the picture on the wall they decided it wasn't a very good likeness.",
+      enter: "a pleasant room with three doors and a lamp. Looking at the picture on the wall they decided it wasn't a very good likeness.",
       exit: "Leaving the pictures looking out at an empty room we went on to... ",
     },
   },
@@ -115,7 +112,7 @@ export const narrative = [
       <p>“Isn't it obvious?”</p>
     `,
     travel: {
-      enter: "... a vaulted chamber lit by a single bulb.",
+      enter: " a vaulted chamber lit by a single bulb.",
       exit: "Taking a vote among themselves they went on to... ",
     },
   },
@@ -127,8 +124,7 @@ export const narrative = [
       <p>They all looked at me. “Yes,” I said. “I'm sure you're right about that.”</p>
     `,
     travel: {
-      enter:
-        "... what appeared to be an old storeroom. Dust obscured a damaged paineting making it hard to understand just what the artist had intended.",
+      enter: " what appeared to be an old storeroom. Dust obscured a damaged paineting making it hard to understand just what the artist had intended.",
       exit: "With doubtful looks they left for... ",
     },
   },
@@ -140,8 +136,7 @@ export const narrative = [
       <p>One picked up the umbrella. “It may rain where we're going.”</p>
     `,
     travel: {
-      enter:
-        "... a room that smelled of paint. Faint voices, apparently in an argument, came from behind the locked door.",
+      enter: " a room that smelled of paint. Faint voices, apparently in an argument, came from behind the locked door.",
       exit: "I signaled my approval and, after a short rest, we came to... ",
     },
   },
@@ -155,8 +150,7 @@ export const narrative = [
       <p>I had noticed this guest before; I would have to be careful. “This is an important choice,” I said, trying to encourage them.</p>
     `,
     travel: {
-      enter:
-        "... an airy room with many doors. It was a big space, but I still felt crowded. I've always hated confinement.",
+      enter: " an airy room with many doors. It was a big space, but I still felt crowded. I've always hated confinement.",
       exit: "Gratefully leaving the room behind we walked all the way to... ",
     },
   },
@@ -168,8 +162,7 @@ export const narrative = [
       <p>They wanted to know if they had been here before... . How could I answer that?</p>
     `,
     travel: {
-      enter:
-        "... a spacious room with a hole in the floor. A ladder led down into the shadows. Outside, leaves shook in the wind. They didn't like the look of that hole in the floor.",
+      enter: " a spacious room with a hole in the floor. A ladder led down into the shadows. Outside, leaves shook in the wind. They didn't like the look of that hole in the floor.",
       exit: "“I have the strangest feeling of déjà vu,” said one who, bolder than the rest, led us into... ",
     },
   },
@@ -182,7 +175,7 @@ export const narrative = [
       <p>They were worried it might be Friday. Well it's true that is was closer to the end of the week than they realized. It takes a great deal of experience, certainly more than they possessed, to understand how time works in the Maze. The clock thought it was six in the evening.</p>
     `,
     travel: {
-      enter: "... room number 13.",
+      enter: " room number 13.",
       exit: "Quickly moving on we came to... ",
     },
   },
@@ -196,8 +189,7 @@ export const narrative = [
       <p>“Choose then!” I cried, as if my feelings were hurt. “Pay no attention to anything I say.” I knew they couldn't afford not to listen to me entirely... they were so easily led.</p>
     `,
     travel: {
-      enter:
-        "... one of the biggest rooms in the House. All three doorways were dark.",
+      enter: " one of the biggest rooms in the House. All three doorways were dark.",
       exit: "Turning around, the group took a path that completely surprised me after all, and I followed them to... ",
     },
   },
@@ -209,8 +201,7 @@ export const narrative = [
       <p>Leaning on the sacrificial tripod I was suddenly moved to say, “Perhaps these numbers relate to each other in some specific combination... ” Immediately I regretted this act of charity... sometimes I think, after all these years, that I don't really know myself.</p>
     `,
     travel: {
-      enter:
-        "... room number 15. Just as we entered I heard a thump and the sound of footsteps hurrying away. Somewhere a door slammed.",
+      enter: " room number 15. Just as we entered I heard a thump and the sound of footsteps hurrying away. Somewhere a door slammed.",
       exit: "One of them thought he had worked it out and, very pleased with himself, led us into... ",
     },
   },
@@ -226,7 +217,7 @@ export const narrative = [
       <p>“You probably scared him,” I said, and they apparently believed me.</p>
     `,
     travel: {
-      enter: "... a stone chamber which reminded me of my old neighbors.",
+      enter: " a stone chamber which reminded me of my old neighbors.",
       exit: "With few regrets on my part we left for... ",
     },
   },
@@ -239,7 +230,7 @@ export const narrative = [
       <p>One should never accept the obvious here. If you think of the Maze as a machine, confusion is its product, and the machine was hard at work.</p>
     `,
     travel: {
-      enter: "... a room with a floor of sand.",
+      enter: " a room with a floor of sand.",
       exit: "Ignoring my good advice they hurried into... ",
     },
   },
@@ -250,8 +241,7 @@ export const narrative = [
       <p>“Are you sure it's the hat that is lost?” I asked reasonably enough. No one would answer me.</p>
     `,
     travel: {
-      enter:
-        "... a much warmer room. Shadows danced across the floor to fire's music.",
+      enter: " a much warmer room. Shadows danced across the floor to fire's music.",
       exit: "Ducking behind a curtain and hurrying down a passageway we came out in ... ",
     },
   },
@@ -263,8 +253,7 @@ export const narrative = [
       <p>In another part of the grounds someone was singing, but they couldn't make out the words.</p>
     `,
     travel: {
-      enter:
-        "... a shaded portico. A late afternoon sun warmed the rough blocks of stone.",
+      enter: " a shaded portico. A late afternoon sun warmed the rough blocks of stone.",
       exit: "Like children they soon became restless and impatient to see something new, so we went on to... ",
     },
   },
@@ -276,7 +265,7 @@ export const narrative = [
       <p>They walked carefully around the edges of the room. I watched with an amusement shared, I think, by the wise old tortoise.</p>
     `,
     travel: {
-      enter: "... room number 20. The ringing stopped as soon as we entered.",
+      enter: " room number 20. The ringing stopped as soon as we entered.",
       exit: "With backwards looks and muttered comments about turtles they left room number 20 and entered... ",
     },
   },
@@ -287,7 +276,7 @@ export const narrative = [
       <p>“We know what the name is,” they interrupted. “Why don't you just tell us which way to go?”</p>
     `,
     travel: {
-      enter: "... a yard containing shrubs trimmed in ornamental shapes.",
+      enter: " a yard containing shrubs trimmed in ornamental shapes.",
       exit: "“I wasn't referring to the plants,” I said in a huff. I refused to say anything else, leaving them to find their own way to... ",
     },
   },
@@ -297,8 +286,7 @@ export const narrative = [
       <p>It's true, I am by nature extremely critical. Although my life is a lonely one I have not spared any of my guests the rigor of my judgment... . We all have our roles to play.</p>
     `,
     travel: {
-      enter:
-        "... a gaudy room that reminded me of a theatrical backdrop. Places like this are overdone, for my taste, but some people like the exotic... well, everyone is a critic.",
+      enter: " a gaudy room that reminded me of a theatrical backdrop. Places like this are overdone, for my taste, but some people like the exotic... well, everyone is a critic.",
       exit: "This is not a bad place, really; one could spend quite some time here. However, in their restive way, the group moved on to... ",
     },
   },
@@ -314,8 +302,7 @@ export const narrative = [
       <p>“You remember, the one with the animal... ”</p>
     `,
     travel: {
-      enter:
-        "... a room with three other doors. Looking out the windows my feet crushed something on the floor.",
+      enter: " a room with three other doors. Looking out the windows my feet crushed something on the floor.",
       exit: "I suggested that we take the door on my right and they realized they had found the door they had been seeking for so long, the entrance to... ",
     },
   },
@@ -328,7 +315,7 @@ export const narrative = [
       <p>“There are no doors,” said the voice. “You are here with the rest of us now... ”</p>
     `,
     travel: {
-      enter: "... a place of unlimited darkness.",
+      enter: " a place of unlimited darkness.",
       exit: "Even my bellowing laughter couldn't fill this space.",
     },
   },
@@ -339,8 +326,7 @@ export const narrative = [
       <p>“Any of those is fine for my purposes.”</p>
     `,
     travel: {
-      enter:
-        "... a high room with the image of a crown on the wall for everyone to see now. Though one of my parents might be lowborn, the other was close to a king... . I've always felt at home here.",
+      enter: " a high room with the image of a crown on the wall for everyone to see now. Though one of my parents might be lowborn, the other was close to a king... . I've always felt at home here.",
       exit: "They were disconcerted at the apparent lack of clues. “Perhaps in another room,” they said, leaving for... ",
     },
   },
@@ -354,7 +340,7 @@ export const narrative = [
       <p>“Was this what you heard outside?”</p>
     `,
     travel: {
-      enter: "... a dramatic room with four entrances and exits.",
+      enter: " a dramatic room with four entrances and exits.",
       exit: "Holding their ears they ran out the door to... ",
     },
   },
@@ -367,7 +353,7 @@ export const narrative = [
       <p>“They must be ahead of us,” I said. “If we hurry we can catch them... I mean catch up with them.”</p>
     `,
     travel: {
-      enter: "... a darkened chamber dominated by a large figure.",
+      enter: " a darkened chamber dominated by a large figure.",
       exit: "I herded the group through the door to... ",
     },
   },
@@ -379,8 +365,7 @@ export const narrative = [
       <p>They wanted to know if they had been here before... . How could I answer that?</p>
     `,
     travel: {
-      enter:
-        "... a spacious room with a hole in the floor. A ladder led down into the shadows. Outside, leaves shook in the wind. They didn't like the look of that hole in the floor.",
+      enter: " a spacious room with a hole in the floor. A ladder led down into the shadows. Outside, leaves shook in the wind. They didn't like the look of that hole in the floor.",
       exit: "“I have the strangest feeling of déjà vu,” said one who, bolder than the rest, led us into... ",
     },
   },
@@ -394,7 +379,7 @@ export const narrative = [
       <p>“Don't worry,” said the man, “here blindness is no disadvantage.”</p>
     `,
     travel: {
-      enter: "... a much smaller room.",
+      enter: " a much smaller room.",
       exit: "I hurried my visitors out as quickly as I could to... ",
     },
   },
@@ -408,8 +393,7 @@ export const narrative = [
       <p>The more confused they became, the more I enjoyed it. No matter how many times I've been through this I'm always fascinated.</p>
     `,
     travel: {
-      enter:
-        "... room number 30. “What a beautiful door... the others are so plain,” said one.",
+      enter: " room number 30. “What a beautiful door... the others are so plain,” said one.",
       exit: "Leaving the room and all that it contained behind us, we entered... ",
     },
   },
@@ -422,8 +406,7 @@ export const narrative = [
       <p>A sudden gust of wind made the branches clatter against each other like old boards. Dead leaves began to gather at our feet.</p>
     `,
     travel: {
-      enter:
-        "... a melancholy little courtyard surrounded by a brick wall too high to see over. A dead tree lifted its bone-white branches to a sky filling with gray clouds.",
+      enter: " a melancholy little courtyard surrounded by a brick wall too high to see over. A dead tree lifted its bone-white branches to a sky filling with gray clouds.",
       exit: "Shivering in the wind we managed to push open one of the heavy doors and make our way to... ",
     },
   },
@@ -437,8 +420,7 @@ export const narrative = [
       <p>“Roosting, evidently.” Their attitude was really beginning to irritate me. I have come to think of all the inhabitants of this House as members of my little kingdom. People can be so arrogant... in a very real way we are all animals, at least in part.</p>
     `,
     travel: {
-      enter:
-        "... a large square room with a hole rudely broken through one wall. It must have taken a great deal of strength to pull the heavy stones out of position.",
+      enter: " a large square room with a hole rudely broken through one wall. It must have taken a great deal of strength to pull the heavy stones out of position.",
       exit: "I wouldn't answer any more of their questions so we left this room to enter... ",
     },
   },
@@ -448,8 +430,7 @@ export const narrative = [
       <p>Realizing that they could see all of the signs only from the center of the room, several wanted to turn back.</p>
     `,
     travel: {
-      enter:
-        "... the room with no floor. They crowded each other on the narrow ledge. The bold one ventured out to the center.",
+      enter: " the room with no floor. They crowded each other on the narrow ledge. The bold one ventured out to the center.",
       exit: "With exaggerated caution, considering their predicament, they finally reached the door they wanted and eventually found themselves in... ",
     },
   },
@@ -460,8 +441,7 @@ export const narrative = [
       <p>“Magpies!” I said to myself. “Not a real thought in their heads.”</p>
     `,
     travel: {
-      enter:
-        "... a middle-class drawing room or parlor. It was amazing how much more comfortable they felt in these surroundings.",
+      enter: " a middle-class drawing room or parlor. It was amazing how much more comfortable they felt in these surroundings.",
       exit: "They were so much at ease they almost missed what the room was telling them altogether. They finally got the message, which I thought was pretty obvious, and we went on to... ",
     },
   },
@@ -477,8 +457,7 @@ export const narrative = [
       <p>“Yes,” I said right away, “I'm sure you're right.”</p>
     `,
     travel: {
-      enter:
-        "... what appeared to be someone's basement. One of them sank gratefully down on an old couch which promptly collapsed.",
+      enter: " what appeared to be someone's basement. One of them sank gratefully down on an old couch which promptly collapsed.",
       exit: "She was immediately suspicious. Still, with no real choice to make, we left the thing standing alone in light and silence, and went into... ",
     },
   },
@@ -490,8 +469,7 @@ export const narrative = [
       <p>“It's not bad,” I said stiffly. “The viol brings the right sense of warmth to the piece, but the guitarist is overplaying his part. Still, he adds a certain plangent brio to an otherwise introspective composition... ”</p>
     `,
     travel: {
-      enter:
-        "... an old and ruinous part of the House. Turning a corner the music we had been hearing became louder and at last we saw the musicians themselves.",
+      enter: " an old and ruinous part of the House. Turning a corner the music we had been hearing became louder and at last we saw the musicians themselves.",
       exit: "Unwilling to interrupt the concert we slipped past the musicians into the door to... . ",
     },
   },
@@ -504,7 +482,7 @@ export const narrative = [
       <p>They really couldn't decide which way to go; half of them wanted to go one way, half another. They were close to splitting up when there was a rattling sound and one of the doors was shaken from the other side.</p>
     `,
     travel: {
-      enter: "... a long, open room with no roof.",
+      enter: " a long, open room with no roof.",
       exit: "They all stopped talking and moved closer together. They soon agreed on a direction and we departed for... ",
     },
   },
@@ -513,8 +491,7 @@ export const narrative = [
     content: `
     `,
     travel: {
-      enter:
-        "... a narrow space where one wall boasted half-finished carving and another some sort of carnival poster. There was a little confusion as we made our entrance but we soon sorted ourselves out.",
+      enter: " a narrow space where one wall boasted half-finished carving and another some sort of carnival poster. There was a little confusion as we made our entrance but we soon sorted ourselves out.",
       exit: "It was impossible to climb up the slippery slide and another door wouldn't open for us, so after emptying the pebbles from our shoes, we marched on to... ",
     },
   },
@@ -526,8 +503,7 @@ export const narrative = [
       <p>“No, that's a chopping sound,” said another.</p>
     `,
     travel: {
-      enter:
-        "... what looked like a combination wine cellar and junk room. Someone had been working here as well.",
+      enter: " what looked like a combination wine cellar and junk room. Someone had been working here as well.",
       exit: "None of them heard the faint jingling that came from behind the wall. “I don't hear anything,” I said loudly and, with as much commotion as possible, hurried them out of the room to... ",
     },
   },
@@ -540,8 +516,7 @@ export const narrative = [
       <p>It was surprising that he could identify any of the symbols, but I was relieved that he couldn't read them correctly.</p>
     `,
     travel: {
-      enter:
-        "... the foundation of the Maze. Deep underground stones had been carved and fitted; passages opened in the natural rock.",
+      enter: " the foundation of the Maze. Deep underground stones had been carved and fitted; passages opened in the natural rock.",
       exit: "Choosing more or less at random they went through a passageway to... ",
     },
   },
@@ -551,8 +526,7 @@ export const narrative = [
       <p>“How can we trust that thing?” one remarked. “Who knows where it ends up... ”</p>
     `,
     travel: {
-      enter:
-        "... a room with a special piece of furniture I thought might appeal to my guests.",
+      enter: " a room with a special piece of furniture I thought might appeal to my guests.",
       exit: "I knew naturally, but that wasn't the point. They were pretty sure of themselves, and went right on to... ",
     },
   },
@@ -565,7 +539,7 @@ export const narrative = [
       <p>I assured them I would help them to return. “You can count on me,” I said sincerely. Still, they wouldn't leave anything behind.</p>
     `,
     travel: {
-      enter: "... the next room.",
+      enter: " the next room.",
       exit: "Opening one of the doors we made our way to... ",
     },
   },
@@ -576,8 +550,7 @@ export const narrative = [
       <p>It was, predictably enough, neither “good” not “bad.” These people just didn't know how to phrase a meaningful question. You have to be very particular in this House.</p>
     `,
     travel: {
-      enter:
-        "... a great hall dominated by the entrance to room 22. The face over the door had a sly look.",
+      enter: " a great hall dominated by the entrance to room 22. The face over the door had a sly look.",
       exit: "We went on to... ",
     },
   },
@@ -588,8 +561,7 @@ export const narrative = [
       <p>“We came in that way,” I offered, but they were convinced we had entered by another door entirely.</p>
     `,
     travel: {
-      enter:
-        "... a courtyard of palms and statues. The trees waved to each other in the breeze.",
+      enter: " a courtyard of palms and statues. The trees waved to each other in the breeze.",
       exit: "They vanished through the wall and I followed them to... ",
     },
   },
@@ -603,7 +575,7 @@ export const narrative = [
       <p>“Now,” I said, after a last look around, “we must find our way back out.”</p>
     `,
     travel: {
-      enter: "... the room at the center of the Maze.",
+      enter: " the room at the center of the Maze.",
       exit: "Leaving the center of the Maze we found ourselves in... ",
     },
   },

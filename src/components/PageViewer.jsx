@@ -22,7 +22,7 @@ const Container = styled.div`
   height: 100%;
 `;
 
-const PageViewer = ({ page = "00", hotspots = [], onHotspotClick }) => {
+const PageViewer = ({ page = "00", hotspots = [], onHotspotClick, onReady }) => {
   const viewerRef = useRef(null);
   const onHotspotClickRef = useRef(onHotspotClick);
 
@@ -63,6 +63,7 @@ const PageViewer = ({ page = "00", hotspots = [], onHotspotClick }) => {
 
     viewer.addHandler("open", () => {
       applyCoverConstraints();
+      onReady?.();
     });
 
     viewer.addHandler("canvas-click", (e) => {

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import styled from "styled-components";
 import { narrative as narrativeData } from "../data/narrative";
 
@@ -33,19 +32,17 @@ const getNarrativeData = (page) => {
   const narrative = narrativeData.find((n) => n.page === page);
   return {
     content: narrative?.content ?? "",
-    travel: {
-      enter: narrative?.travel?.enter ?? "",
-      exit: narrative?.travel?.exit ?? "",
-    },
   };
 };
 
-const NarrativeOverlay = ({ page }) => {
-  const [isVisible, setIsVisible] = useState(true);
-  const { content, travel } = getNarrativeData(page);
+// NarrativeOverlay is now fully controlled — visibility is managed by App.
+// isVisible: boolean
+// onDismiss: () => void
+const NarrativeOverlay = ({ page, isVisible, onDismiss }) => {
+  const { content } = getNarrativeData(page);
 
   return (
-    <Container $isVisible={isVisible} onClick={() => setIsVisible(false)}>
+    <Container $isVisible={isVisible} onClick={onDismiss}>
       <Content dangerouslySetInnerHTML={{ __html: content }} />
     </Container>
   );
