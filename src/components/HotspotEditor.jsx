@@ -293,7 +293,7 @@ const HotspotEditor = () => {
 
   useEffect(() => {
     if (!osdRef.current) return;
-    osdRef.current.open(`/images/dzi/room-${page}.dzi`);
+    osdRef.current.open(`/images/rooms/dzi/room-${page}.dzi`);
   }, [page]);
 
   // ── Sync OSD overlay SVG ──────────────────────────────────────────────────

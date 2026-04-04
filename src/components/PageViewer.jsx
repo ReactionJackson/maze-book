@@ -20,9 +20,17 @@ const isPointInPolygon = (px, py, points) => {
 const Container = styled.div`
   width: 100%;
   height: 100%;
+  &.hotspot-hover .openseadragon-canvas {
+    cursor: pointer !important;
+  }
 `;
 
-const PageViewer = ({ page = "00", hotspots = [], onHotspotClick, onReady }) => {
+const PageViewer = ({
+  page = "00",
+  hotspots = [],
+  onHotspotClick,
+  onReady,
+}) => {
   const viewerRef = useRef(null);
   const onHotspotClickRef = useRef(onHotspotClick);
 
@@ -35,7 +43,7 @@ const PageViewer = ({ page = "00", hotspots = [], onHotspotClick, onReady }) => 
 
     const viewer = OpenSeadragon({
       element: viewerRef.current,
-      tileSources: `/images/dzi/room-${page}.dzi`,
+      tileSources: `/images/rooms/dzi/room-${page}.dzi`,
       constrainDuringPan: true,
       maxZoomLevel: config.MAX_ZOOM_LEVEL,
       visibilityRatio: 1,
@@ -64,6 +72,31 @@ const PageViewer = ({ page = "00", hotspots = [], onHotspotClick, onReady }) => 
     viewer.addHandler("open", () => {
       applyCoverConstraints();
       onReady?.();
+
+      // Attach a native mousemove to the OSD canvas element directly.
+      // This fires reliably regardless of OSD's synthetic event system,
+      // and runs after OSD's own listeners so our cursor setting wins.
+      const osdCanvas = viewer.canvas;
+      if (!osdCanvas) return;
+
+      const onMouseMove = (e) => {
+        if (hotspots.length === 0) return;
+        const rect = osdCanvas.getBoundingClientRect();
+        const vpPt = viewer.viewport.viewerElementToViewportCoordinates(
+          new OpenSeadragon.Point(e.clientX - rect.left, e.clientY - rect.top),
+        );
+        const over = hotspots.some(
+          (hs) => !(hs.target === "17" && page === "29") && isPointInPolygon(vpPt.x, vpPt.y, hs.points),
+        );
+        viewerRef.current?.classList.toggle("hotspot-hover", over);
+      };
+
+      const onMouseLeave = () => {
+        viewerRef.current?.classList.remove("hotspot-hover");
+      };
+
+      osdCanvas.addEventListener("mousemove", onMouseMove);
+      osdCanvas.addEventListener("mouseleave", onMouseLeave);
     });
 
     viewer.addHandler("canvas-click", (e) => {
@@ -77,17 +110,6 @@ const PageViewer = ({ page = "00", hotspots = [], onHotspotClick, onReady }) => 
           break;
         }
       }
-    });
-
-    viewer.addHandler("canvas-move", (e) => {
-      if (hotspots.length === 0) return;
-      const vpPt = viewer.viewport.viewerElementToViewportCoordinates(
-        e.position,
-      );
-      const over = hotspots.some((hs) =>
-        isPointInPolygon(vpPt.x, vpPt.y, hs.points),
-      );
-      viewer.element.style.cursor = over ? "pointer" : "default";
     });
 
     viewer.addHandler("resize", applyCoverConstraintsDeferred);
